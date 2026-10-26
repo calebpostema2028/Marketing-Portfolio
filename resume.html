@@ -32,11 +32,19 @@
     }
     .portfolio-link{
       position:absolute;
-      left:4.4%;
-      top:83.4%;
-      width:16.4%;
-      height:5.8%;
+      z-index:10;
+      display:flex;
+      left:2.5%;
+      top:81.5%;
+      width:21%;
+      height:9%;
+      align-items:center;
+      justify-content:center;
       border-radius:8px;
+      cursor:pointer;
+      color:transparent;
+      background:rgba(255,255,255,.001);
+      text-decoration:none;
     }
     .portfolio-link:focus-visible{
       outline:3px solid #fff;
@@ -53,7 +61,7 @@
 <body>
   <div class="resume-shell">
     <img class="resume" src="resume.png" alt="Caleb Postema resume"/>
-    <a class="portfolio-link" href="./" aria-label="Open Caleb Postema's marketing portfolio"></a>
+    <a class="portfolio-link" href="https://calebpostema2028.github.io/Marketing-Portfolio/" aria-label="Open Caleb Postema's marketing portfolio">Open marketing portfolio</a>
   </div>
 </body>
 </html>
