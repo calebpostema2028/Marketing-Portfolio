@@ -18,22 +18,42 @@
         radial-gradient(ellipse at top, rgba(255,255,255,.045), transparent 58%),
         #171512;
     }
+    .resume-shell{
+      position:relative;
+      width:min(100%, 850px);
+      align-self:flex-start;
+    }
     .resume{
       display:block;
-      width:min(100%, 850px);
+      width:100%;
       height:auto;
-      align-self:flex-start;
       background:#fff;
       box-shadow:0 22px 60px rgba(0,0,0,.55);
+    }
+    .portfolio-link{
+      position:absolute;
+      left:4.4%;
+      top:83.4%;
+      width:16.4%;
+      height:5.8%;
+      border-radius:8px;
+    }
+    .portfolio-link:focus-visible{
+      outline:3px solid #fff;
+      outline-offset:3px;
     }
     @media print{
       html, body{ background:#fff; }
       body{ padding:0; }
-      .resume{ width:100%; box-shadow:none; }
+      .resume-shell, .resume{ width:100%; box-shadow:none; }
+      .portfolio-link{ display:none; }
     }
   </style>
 </head>
 <body>
-  <img class="resume" src="resume.png" alt="Caleb Postema resume"/>
+  <div class="resume-shell">
+    <img class="resume" src="resume.png" alt="Caleb Postema resume"/>
+    <a class="portfolio-link" href="./" aria-label="Open Caleb Postema's marketing portfolio"></a>
+  </div>
 </body>
 </html>
